@@ -1,0 +1,18 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { RxjsSubscriptionComponent } from './rxjs-subscription/rxjs-subscription.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AsyncExampleComponent } from './async-example/async-example.component';
+import { SubjectsExamplesComponent } from './subjects-examples/subjects-examples.component';
+import { ReplaySubjectComponent } from './subjects-examples/replay-subject/replay-subject.component';
+
+@NgModule({
+  declarations: [AppComponent, RxjsSubscriptionComponent, AsyncExampleComponent, SubjectsExamplesComponent, ReplaySubjectComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
