@@ -8,9 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AsyncExampleComponent } from './async-example/async-example.component';
 import { SubjectsExamplesComponent } from './subjects-examples/subjects-examples.component';
 import { ReplaySubjectComponent } from './subjects-examples/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './subjects-examples/async-subject/async-subject.component';
 
 @NgModule({
-  declarations: [AppComponent, RxjsSubscriptionComponent, AsyncExampleComponent, SubjectsExamplesComponent, ReplaySubjectComponent],
+  declarations: [AppComponent, RxjsSubscriptionComponent, AsyncExampleComponent, SubjectsExamplesComponent, ReplaySubjectComponent, AsyncSubjectComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
